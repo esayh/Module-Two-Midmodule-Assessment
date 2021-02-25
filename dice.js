@@ -12,11 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	const btn = document.querySelector('button')
 	const para = document.querySelector('#dice-para')
 	const sum = document.querySelector('#sum-para')
+	const ul = document.createElement('ul')
+	document.body.appendChild(ul)
 
 	btn.addEventListener('click', () => {
 		getDice()
 	})
-
+	let clicks = 0
 	function getDice() {
 		let add = 0
 		para.innerHTML = ''
@@ -25,7 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			para.innerHTML += diceArr[randDice].dice
 			add += diceArr[randDice].value
 		}
+
 		sum.textContent = `Sum = ${add}`
+
+		clicks++
+		if (clicks > 1) {
+			const li = document.createElement('li')
+			ul.appendChild(li)
+			li.textContent = `${para.innerHTML} = ${add}`
+		}
 	}
-	//history.textContent = para.innerHTML
 })
