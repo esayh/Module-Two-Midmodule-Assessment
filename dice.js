@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		sum.textContent = `Sum = ${add}`
 
 		clicks++
-		if (clicks > 1) {
+		if (clicks > 0) {
 			const li = document.createElement('li')
 			ul.appendChild(li)
 			li.textContent = `${para.innerHTML} = ${add}`
