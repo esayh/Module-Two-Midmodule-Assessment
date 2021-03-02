@@ -1,3 +1,7 @@
-button {
-	display: block;
+legend {
+	background-color: black;
+	color: white;
+	padding: 3px 6px;
+	text-align: center;
+	font-size: larger;
 }
