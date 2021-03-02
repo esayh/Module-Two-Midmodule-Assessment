@@ -1,3 +1,14 @@
+// My smart goals for mid mod :
+
+// ID: Passing all test but need but to add some code to push first roll to history after second roll
+// Smart goal : find a way to add this code to my test
+
+// ID: my page doesn't have any styling
+// Smart goal: style my page to my liking or get it to look like the demo gif
+
+
+
+
 const diceArr = [
 	{ dice: '&#9856', value: 1 },
 	{ dice: '&#9857', value: 2 },
